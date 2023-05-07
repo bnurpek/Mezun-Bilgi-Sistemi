@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ytu_blue">#272262</color>
+    <color name="ytu_blue_tint10">#3a3a74</color>
+    <color name="ytu_blue_tint20">#505083</color>
+    <color name="ytu_blue_tint30">#666693</color>
+    <color name="ytu_blue_tint40">#7c7ca2</color>
+    <color name="ytu_blue_tint50">#9292b2</color>
+    <color name="ytu_blue_tint60">#a7a7c1</color>
+    <color name="ytu_gold">#a59566</color>
+    <color name="ytu_gold_shade10">#95865c</color>
+    <color name="ytu_gold_shade20">#847752</color>
+    <color name="ytu_gold_shade30">#736847</color>
+    <color name="ytu_gold_shade40">#63593d</color>
+    <color name="ytu_gold_shade50">#534b33</color>
+</resources>

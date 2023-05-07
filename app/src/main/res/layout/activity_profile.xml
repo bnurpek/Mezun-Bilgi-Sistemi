@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="30dp"
+        android:text="Tam ad"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_full_name"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/avatar"
+        android:background="@color/ytu_gold_tint80"
+        android:scaleType="centerCrop"/>
+
+    <ImageButton
+        android:id="@+id/ib_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_alignTop="@+id/iv_profile"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/send_mail" />
+
+    <ImageButton
+        android:id="@+id/ib_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ib_email"
+        android:layout_toRightOf="@+id/ib_email"
+        android:src="@drawable/get_contact"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/ib_email"
+        android:layout_alignLeft="@+id/ib_email"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/ib_more"
+        android:layout_width="40dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/ib_email"
+        android:layout_toRightOf="@+id/recyclerView"
+        android:layout_marginTop="20dp"
+        android:background="?attr/colorPrimary"
+        android:src="@drawable/plus"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_not"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ib_email"
+        android:layout_alignLeft="@+id/ib_email"
+        android:text="Kullanıcının hiçbir gönderisi bulunmamaktadır."
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_profile"
+        android:fontFamily="sans-serif-black"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Eğitim Bilgileri"
+        android:ems="8"/>
+
+    <TextView
+        android:id="@+id/tv_lisans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_education"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="5dp"
+        android:text="Lisans"
+        android:ems="8"/>
+
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_lisans"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Giriş Tarihi: "
+        android:ems="11"/>
+
+    <TextView
+        android:id="@+id/tv_grad_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_start_date"
+        android:layout_toRightOf="@+id/tv_start_date"
+        android:text="Mezuniyet Tarihi: "
+        android:ems="11"/>
+
+    <TextView
+        android:id="@+id/tv_yüksek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_start_date"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="5dp"
+        android:text="Yüksek Lisans"
+        android:ems="8"/>
+
+    <TextView
+        android:id="@+id/tv_yüksek_uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_yüksek"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Üniversite Adı: "
+        android:ems="22"/>
+
+    <TextView
+        android:id="@+id/tv_yüksek_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_yüksek_uni"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Giriş Tarihi: "
+        android:ems="11"/>
+
+    <TextView
+        android:id="@+id/tv_yüksek_grad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_yüksek_start"
+        android:layout_toRightOf="@+id/tv_start_date"
+        android:text="Mezuniyet Tarihi: "
+        android:ems="11"/>
+
+    <TextView
+        android:id="@+id/tv_doktora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_yüksek_start"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="5dp"
+        android:text="Doktora"
+        android:ems="8"/>
+
+    <TextView
+        android:id="@+id/tv_doktora_uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_doktora"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Üniversite Adı: "
+        android:ems="22"/>
+
+    <TextView
+        android:id="@+id/tv_doktora_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_doktora_uni"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Giriş Tarihi: "
+        android:ems="11"/>
+
+    <TextView
+        android:id="@+id/tv_doktora_grad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_doktora_start"
+        android:layout_toRightOf="@+id/tv_start_date"
+        android:text="Mezuniyet Tarihi: "
+        android:ems="11"/>
+
+    <TextView
+        android:id="@+id/tv_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_doktora_grad"
+        android:fontFamily="sans-serif-black"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="5dp"
+        android:text="Güncel Çalışma Bilgileri"
+        />
+
+    <TextView
+        android:id="@+id/tv_comp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_work"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Firma Adı: "
+        android:ems="22"/>
+
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_comp_name"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Ülke:"
+        android:ems="11"/>
+
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_country"
+        android:layout_toRightOf="@+id/tv_start_date"
+        android:text="Şehir: "
+        android:ems="11"/>
+
+
+</RelativeLayout>
+</ScrollView>

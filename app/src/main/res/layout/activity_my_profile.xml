@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="30dp"
+        android:text="Tam ad"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_full_name"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/avatar"
+        android:background="@color/ytu_gold_tint80"
+        android:scaleType="centerCrop"/>
+
+    <ImageButton
+        android:id="@+id/ib_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/from_gallery"
+        android:background="@color/white"
+        android:layout_alignTop="@+id/iv_profile"
+        android:layout_alignRight="@+id/iv_profile"
+        android:layout_marginRight="-25dp"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/from_camera"
+        android:background="@color/white"
+        android:layout_alignTop="@+id/iv_profile"
+        android:layout_alignRight="@+id/iv_profile"
+        android:layout_marginRight="-25dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ib_file"
+        android:layout_alignBottom="@+id/ib_file"
+        android:layout_marginLeft="30dp"
+        android:text="E-posta: *"
+        android:ems="4"/>
+
+    <EditText
+        android:id="@+id/et_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email"
+        android:text="bilmemne@gmail.com"
+        android:layout_alignLeft="@+id/tv_email"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/tv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_mail"
+        android:layout_alignLeft="@id/tv_email"
+        android:text="Numara: *"
+        android:ems="4"/>
+
+    <EditText
+        android:id="@+id/et_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tel"
+        android:hint="0555 55 5555"
+        android:inputType="phone"
+        android:layout_alignLeft="@+id/tv_email"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/tv_education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_profile"
+        android:fontFamily="sans-serif-black"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Eğitim Bilgileri"
+        android:ems="8"/>
+
+    <TextView
+        android:id="@+id/tv_lisans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_education"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="5dp"
+        android:text="Lisans *"
+        android:ems="8"/>
+
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_lisans"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Giriş Tarihi"
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_start_date"
+        android:layout_alignLeft="@id/iv_profile"
+        android:text="19/11/1911"
+        android:ems="8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_yüksek_start"
+        android:layout_alignLeft="@+id/et_grad_date"
+        android:text="Mezuniyet Tarihi"
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_grad_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/et_start_date"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="19/11/1911"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/tv_yüksek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_start_date"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="5dp"
+        android:text="Yüksek Lisans"
+        android:ems="8"/>
+
+    <TextView
+        android:id="@+id/tv_yüksek_uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_yüksek"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Üniversite Adı: "
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_yüksek_uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_yüksek_uni"
+        android:layout_alignLeft="@id/iv_profile"
+        android:ems="17" />
+
+    <TextView
+        android:id="@+id/tv_yüksek_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_yüksek_uni"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Giriş Tarihi"
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_yüksek_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_yüksek_start"
+        android:layout_alignLeft="@id/iv_profile"
+        android:hint="GG/AA/YYYY"
+        android:ems="8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_start_date"
+        android:layout_alignLeft="@+id/et_grad_date"
+        android:text="Mezuniyet Tarihi"
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_yüksek_grad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/et_yüksek_start"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:hint="GG/AA/YYYY"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/tv_doktora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_yüksek_start"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="5dp"
+        android:text="Doktora"
+        android:ems="8"/>
+
+    <TextView
+        android:id="@+id/tv_doktora_uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_doktora"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Üniversite Adı: "
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_doktora_uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_doktora_uni"
+        android:layout_alignLeft="@id/iv_profile"
+        android:ems="17" />
+
+    <TextView
+        android:id="@+id/tv_doktora_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_doktora_uni"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Giriş Tarihi"
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_doktora_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_doktora_start"
+        android:layout_alignLeft="@id/iv_profile"
+        android:hint="GG/AA/YYYY"
+        android:ems="8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_doktora_start"
+        android:layout_alignLeft="@+id/et_grad_date"
+        android:text="Mezuniyet Tarihi"
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_doktora_grad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/et_doktora_start"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:hint="GG/AA/YYYY"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/tv_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_doktora_grad"
+        android:fontFamily="sans-serif-black"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="5dp"
+        android:text="Güncel Çalışma Bilgileri"
+        />
+
+    <TextView
+        android:id="@+id/tv_comp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_work"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Firma Adı: "
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_comp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_comp_name"
+        android:layout_alignLeft="@id/iv_profile"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_comp_name"
+        android:layout_alignLeft="@+id/iv_profile"
+        android:layout_marginTop="10dp"
+        android:text="Ülke:"
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_country"
+        android:layout_alignLeft="@id/iv_profile"
+        android:ems="8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_country"
+        android:layout_alignLeft="@+id/et_grad_date"
+        android:text="Şehir: "
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/et_country"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:ems="8" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/et_city"
+        android:layout_margin="30dp"
+        android:ems="8"
+        android:text="Kaydet" />
+
+    <CheckBox
+        android:id="@+id/cb_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tel"
+        android:layout_alignParentRight="true"
+        android:textSize="10sp" />
+
+    <CheckBox
+        android:id="@+id/cb_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email"
+        android:layout_alignParentRight="true"
+        android:textSize="10sp" />
+
+</RelativeLayout>
+</ScrollView>

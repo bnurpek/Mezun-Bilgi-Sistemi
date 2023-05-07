@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mezun Bilgi Sistemi</string>
+    <string name="forgot_pass"><u>Şifremi unuttum.</u></string>
+</resources>
